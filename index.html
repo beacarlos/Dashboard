@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SysCancelas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/app.css"/>
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css"/>
+    <link rel="stylesheet" type="text/css" href="css/icon.min.css"/>
+</head>
+<body>
+    <div class="ui sidebar vertical left menu overlay visible" style="-webkit-transition-duration: 0.1s; overflow: visible !important; background-color: #006D44 !important;">
+        <div class="item logo">
+            <img src="img/SysCancelas.png" id="imgBig"/>
+            <img src="img/intra_bola_branca.png" style="display: none" id="imgSmall" />
+        </div>
+        <div class="ui accordion">
+            <a class="item " id="intranet" href="https://intranet.maracanau.ifce.edu.br/" target="_blank">
+                <p class="pTitle">
+                    <img src="img/intra_bola_branca.png" id="intranetIcon"> 
+                    <span id="textDrop">Intranet</span>
+                </p>
+            </a>
+            <a class="item notContent" id="voltar">
+                <p class="pTitle"><i class="arrow alternate circle left outline icon" id="iconSidebar"></i> <span id="textDrop">Voltar</span></p>
+            </a>
+            <a class="item notContent" id="paginaInicial">
+                <p class="pTitle"><i class="home layout icon" id="iconSidebar"></i> <span id="textDrop">Página Inicial</span></p>
+            </a>
+            <a class="item notContent" id="transito">
+                <p class="pTitle"><i class="address card outline icon" id="iconSidebar"></i> <span id="textDrop">Trânsito</span></p>
+            </a>
+            <a class="item notContent" id="registro">
+                <p class="pTitle"><i class="file alternate icon" id="iconSidebar"></i> <span id="textDrop">Registro</span></p>
+            </a>
+            <a class="title item" id="cadastros">
+                <p class="pTitle"><i class="user icon" id="iconSidebar"></i> <span id="textDrop">Cadastros</span> <i class="dropdown icon" id="dropdownIconSidebar"></i></p>
+            </a>
+            <div class="content" id="cadastros">
+                <a class="item itemNotInSubMenu notContent" id="cadastrarPessoa" href="#!"><span>Cadastrar condutor</span>
+                </a>
+                <!-- <div class="" id="subSubMenu">
+                    <a class="title item" id="permissao">
+                        <p class="pTitle"><span style="">Permissão</span> <i class="dropdown icon" id="dropdownIconSidebarSub"></i></p>
+                    </a>
+                    <div class="content" id="permissao">
+                        <a class="item itemInSubMenu aLoadContainer" id="cadastrarPermissao" href="#!">Cadastrar Permissão
+                        </a>
+                        <a class="item itemInSubMenu aLoadContainer" id="gerenciarPermissao" href="#!">Gerenciar Permissão
+                        </a>
+                    </div>
+                </div> -->
+                <a class="item itemNotInSubMenu notContent" id="cadastrarPessoa" href="#!"><span>Cadastrar usuário</span>
+                </a>
+            </div>
+            <a class="title item" id="barreira">
+                <p class="pTitle"><img src="img/access.png" alt=""></i> <span id="textDrop">Barreiras</span> <i class="dropdown icon" id="dropdownIconSidebar"></i></p>
+            </a>
+            <div class="content" id="barreira">
+                <a class="item itemNotInSubMenu notContent" id="cadastrarPessoa" href="#!"><span>Entrada</span>
+                </a>
+                <!-- <div class="" id="subSubMenu">
+                    <a class="title item" id="test">
+                        <p class="pTitle"><span style="">Permissão</span> <i class="dropdown icon" id="dropdownIconSidebarSub"></i></p>
+                    </a>
+                    <div class="content" id="test">
+                        <a class="item itemInSubMenu aLoadContainer" id="cadastrarTest" href="#!">Cadastrar Permissão
+                        </a>
+                        <a class="item itemInSubMenu aLoadContainer" id="gerenciarTest" href="#!">Gerenciar Permissão
+                        </a>
+                    </div>
+                </div> -->
+                <a class="item itemNotInSubMenu notContent" id="cadastrarSistema" href="#!"><span>Saída</span>
+                </a>
+            </div>
+            <a class="item notContent" id="configuracoes">
+                <p class="pTitle"><i class="wrench icon" id="iconSidebar"></i> <span id="textDrop">Configurações</span></p>
+            </a>
+            <a class="item notContent" id="Ajuda">
+                <p class="pTitle"><i class="question icon" id="iconSidebar"></i> <span id="textDrop">Ajuda</span></p>
+            </a>
+        </div>
+        <div class="" id="iconesSidebarMenor">
+            <div class="ui dropdown item displaynone" id="dropdownToOneIcon">
+                <z>Página Inicial</z>
+                <i class="home layout icon" id="paginaInicial"></i>
+            </div>
+            <div class="ui dropdown item displaynone" id="dropdownToOneIcon">
+                <z>Voltar</z>
+                <i class="arrow alternate circle left outline icon" id="voltar"></i>
+            </div>
+            <div class="ui dropdown link item displaynone" id="dropdownToOneIcon">
+                <z>Pessoa</z>
+                <i class="user icon" id="pessoa"></i>
+                <div class="menu pessoa" id="dropwdownIcones">
+                    <div class="header">
+                        Pessoa
+                    </div>
+                    <div class="ui divider"></div>
+                    <a class="item" href="#!"> <i class="dropdown icon" style="margin-top: -2px !important;"></i>Permissão
+                        <div class="menu">
+                            <div class="item">Cadastrar Permissão</div>
+                            <div class="item">Gerenciar Permissão</div>
+                        </div>
+                    </a>
+                    <a class="item" href="#!">Cadastrar Pessoa</a>
+                    <a class="item" href="#!">Gerenciar Pessoa</a>
+                </div>
+            </div>
+            <div class="ui dropdown item displaynone" id="dropdownToOneIcon">
+                <z>Sistemas</z>
+                <i class="th icon" id="sistema"></i>
+                <div class="menu sistema" id="dropwdownIcones">
+                    <div class="header">
+                        Sistemas
+                    </div>
+                    <div class="ui divider"></div>
+                    <a class="item" href="sidebar.html">Cadastrar Sistemas</a>
+                    <a class="item" href="menu.html">Gerenciar Sistemas</a>
+                </div>
+            </div>
+            <div class="ui dropdown item displaynone" id="dropdownToOneIcon">
+                <z>Carga Horária</z>
+                <i class="time icon" id="cargaHoraria"></i>
+                <div class="menu cargaHoraria" id="dropwdownIcones">
+                    <div class="header">
+                        Carga Horária
+                    </div>
+                    <div class="ui divider"></div>
+                    <a class="item" href="#!">Cadastrar Carga Horária</a>
+                    <a class="item" href="menu.html">Gerenciar Carga Horária</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pusher">
+        <div class="ui menu asd borderless" style="" id="navbarSistema">
+            <a class="item openbtn">
+                <i class="icon content"></i>
+            </a>
+            <div class="right menu" id="iconesNavbar">
+                <a class="item">
+                    <i class="th icon big" id="system"></i>
+                </a>
+                
+                &nbsp;&nbsp;&nbsp;
+                <div class="ui popup bottom left transition hidden" id="popUpSystem">
+                    <div class="ui one column relaxed equal height divided grid">
+                        <div class="column">
+                            <ul class="ulGeral" id="system">
+                                <li class="liGeral" id="system">
+                                    <a class="aGeral" id="system">
+                                        <img src="img/logo_sysreserva.png" class="imgSys">
+                                        <span>SysReserva</span>
+                                    </a>
+                                </li>
+                                <li class="liGeral" id="system">
+                                    <a class="aGeral" id="system">
+                                        <img src="img/logo_sysreserva.png" class="imgSys">
+                                        <span>SysReserva</span>
+                                    </a>
+                                </li>
+                                <li class="liGeral" id="system">
+                                    <a class="aGeral" id="system">
+                                        <img src="img/logo_sysreserva.png" class="imgSys">
+                                        <span>SysReserva</span>
+                                    </a>
+                                </li>
+                                <li class="liGeral" id="system">
+                                    <a class="aGeral" id="system">
+                                        <img src="img/logo_sysreserva.png" class="imgSys">
+                                        <span>SysReserva</span>
+                                    </a>
+                                </li> <li class="liGeral" id="system">
+                                    <a class="aGeral" id="system">
+                                        <img src="img/logo_sysreserva.png" class="imgSys">
+                                        <span>SysReserva</span>
+                                    </a>
+                                </li>
+                                <li class="liGeral" id="system">
+                                    <a class="aGeral" id="system">
+                                        <img src="img/logo_sysreserva.png" class="imgSys">
+                                        <span>SysReserva</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a class="item">
+                    <i class="bell icon big" id="notifications"></i>
+                </a>
+                &nbsp;&nbsp;&nbsp;
+                <!--Pop Up para sistemas -->
+                <div class="ui popup bottom left transition hidden" id="popUpNotifications">
+                    <div class="ui one column relaxed equal height divided grid">
+                        <div class="column">
+                            <div class="ui comments" id="commentsNotifications">
+                                <h3 class="ui dividing header">Notificações</h3>
+                                <div class="comment">
+                                    <a class="avatar">
+                                        <img src="img/matt.jpg">
+                                    </a>
+                                    <div class="content">
+                                        <a class="author">Emerson Henrique</a>
+                                        <div class="metadata">
+                                            <span class="date">Hoje as 09:40AM</span>
+                                        </div>
+                                        <div class="text">
+                                            Termo de compromisso de estágio disponível para download
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment">
+                                    <a class="avatar">
+                                        <img src="img/matt.jpg">
+                                    </a>
+                                    <div class="content">
+                                        <a class="author">Emerson Henrique</a>
+                                        <div class="metadata">
+                                            <span class="date">Hoje as 09:40AM</span>
+                                        </div>
+                                        <div class="text">
+                                            Termo de compromisso de estágio disponível para download
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment">
+                                    <a class="avatar">
+                                        <img src="img/matt.jpg">
+                                    </a>
+                                    <div class="content">
+                                        <a class="author">Emerson Henrique</a>
+                                        <div class="metadata">
+                                            <span class="date">Hoje as 09:40AM</span>
+                                        </div>
+                                        <div class="text">
+                                            Termo de compromisso de estágio disponível para download
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="item">
+                    <img class="ui avatar image openDivNone" id="informationsUser" src="img/teste.jpg" style="cursor: pointer;">
+                </a>
+                &nbsp;&nbsp;&nbsp;
+                <!--Pop Up para sistemas -->
+                <div class="ui popup bottom left transition hidden" id="popUpInformationUser">
+                    <div class="ui one column relaxed equal height divided grid">
+                        <div class="column">
+                            <div class="ui cards">
+                                <div class="card"  id="cardUser">
+                                    <div class="content">
+                                        <img class="right floated mini ui image" src="img/matt.jpg">
+                                        <div class="header">
+                                            Elliot Fu
+                                        </div>
+                                        <div class="meta">
+                                            Friends of Veronika
+                                        </div>
+                                        <div class="description">
+                                            Elliot requested permission to view your contact details
+                                        </div>
+                                    </div>
+                                    <div class="extra content">
+                                        <div class="ui two buttons">
+                                            <div class="ui basic green button">Approve</div>
+                                            <div class="ui basic red button">Decline</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui container containerPrincipal" id="containerToInformations">
+            <div class="ui four column stackable grid">
+                <div class="four wide column">
+                    <div class="ui segment" style="background-color: #2DCC70; border-right: #2BB866 4rem solid;">
+                        <p class="textoQuantidadeAcesso">20</p>
+                        <span class="quantidadeAcesso">Administrativos</span>
+                    </div>
+                </div>
+                <div class="four wide column">
+                    <div class="ui segment" style="background-color: #22B8E7; border-right: #21A5CF 4rem solid;">
+                        <p class="textoQuantidadeAcesso">20</p>
+                        <span class="quantidadeAcesso">Professores</span>
+                    </div>
+                </div>
+                <div class="four wide column">
+                    <div class="ui segment" style="background-color: #F39C0F; border-right: #DE8B13 4rem solid;">
+                        <p class="textoQuantidadeAcesso">20</p>
+                        <span class="quantidadeAcesso">Alunos</span>
+                    </div>
+                </div>
+                <div class="four wide column">
+                    <div class="ui segment" style="background-color: #E74A3C; border-right: #CE4436 4rem solid;">
+                        <p class="textoQuantidadeAcesso">20</p>
+                        <span class="quantidadeAcesso">Tercerizados</span>
+                    </div>
+                </div>
+            </div>
+            <div class="ui two column stackable grid">
+                <div class="twelve wide column"> 
+                    <div class="ui segment" style="background-color: #F2F2F2;">
+                        <div id="grafico-vertical" style="height: 235px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="four wide column" style="text-align: center;"> 
+                    <div class="ui column stackable grid">
+                        <div class="column row">
+                            <div class="column">
+                                <div class="ui segment" style="background-color: #F2F2F2;">
+                                    <p style="font-size: 1.5rem; margin-bottom: 0%;">Carros</p>                                    
+                                    <p style="font-size: 3rem;">60</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column row">
+                            <div class="column">
+                                <div class="ui segment" style="background-color: #F2F2F2;">
+                                    <p style="font-size: 1.5rem; margin-bottom: 0%;">Motos</p>                                    
+                                    <p style="font-size: 3rem;">150</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui two column stackable grid">
+                <div class="eight wide column"> 
+                    <div class="ui segment" style="background-color: #F2F2F2;">
+                        <div id="grafico-horizontal" style="height: 300px;"></div>
+                    </div>
+                </div>
+                <div class="eight wide column"> 
+                    <div class="ui column stackable grid">
+                        <div class="column row">
+                            <div class="column">
+                                <div class="ui segment" style="background-color: #F2F2F2;">
+                                    <div id="donut" style="height: 150px; margin: 0% !important;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column row">
+                            <div class="column">
+                                <div class="ui segment" style="text-align: center;background-color: #F2F2F2;">
+                                    <p style="font-size: 1.5rem; margin-bottom: 0%;">Tempo de permanência médio</p>                                    
+                                    <p style="font-size: 3rem;">15:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/semantic.min.js" ></script>
+    <script type="text/javascript" src="js/app.js" ></script>
+    <script src="charts/highcharts.js"></script>
+    <script src="charts/modules/exporting.js"></script>
+    <script src="charts/modules/export-data.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

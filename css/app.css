@@ -1,0 +1,234 @@
+.marginlefting {
+    margin-left: 60px !important;
+}
+
+.displaynone {
+    display: none !important;
+}
+
+.displayblock {
+    display: block !important;
+}
+
+.sidebar .item i {
+    font-size: 18px;
+    margin-top: -5px !important;
+}
+
+#intranetIcon{
+    width: 9%;
+}
+.logo {
+    height: 48px !important;
+    padding: 10px !important;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 60px !important;
+}
+
+.logo img#imgBig {
+    width: 75% !important;
+    height: auto !important;
+    margin-top: 10px;
+}
+
+.logo img#imgSmall {
+    width: 96% !important;
+}
+
+.title.item {
+    padding: .92857143em 1.14285714em !important;
+}
+
+.dropdown .menu .header {
+    padding-top: 3.9px!important;
+    padding-bottom: 3.9px!important;
+}
+
+#navbarSistema{
+    border-radius: 0!important; 
+    border: 0;
+    margin-left: 260px;
+    -webkit-transition-duration: 0.1s;
+    background-color: #34483F !important;
+    height: 55px;
+}
+
+/* Remover linhas de ícones */
+.ui.menu .item {
+    position: initial !important;
+}
+
+.openbtn{
+    color: white !important;
+    font-size: 2em;
+    margin-top: -5px !important;  
+}
+#iconesSidebarMenor i:not(.dropdown){
+    color:white !important;
+}
+#dropdownToOneIcon{
+    margin-bottom: 10px !important;
+}
+/*#dropwdownIcones{
+    margin-top: 108.2px !important;
+}*/
+.ui.vertical.menu .dropdown.item:not(.upward) .menu{
+    top: inherit !important;
+}
+.ui.dropdown .menu{
+    top: inherit !important;
+}
+
+#dropdownToOneIcon i.active{
+    border-radius: 30px !important;
+    background-color: white;
+    color: #006D44 !important;
+    width: 38px !important;
+    height: 38px !important;
+    line-height: 2;
+    margin-left: -5px !important;
+    margin-top: -10px !important;
+    margin-bottom: -9px !important;
+}
+
+.ui.vertical.menu .active.item{
+    background: transparent !important; 
+}
+
+.ui.vertical.menu .ui.accordion .active.item:not(.title){
+    background: white !important;
+    border-left-style: solid !important;
+    border-left-color: #34483F !important;
+    border-left-width: thick !important;
+    width: 99% !important;
+    /*height: 30px !important;*/
+    border-bottom-right-radius: 14px !important;
+    border-top-right-radius: 14px !important;
+    color: #000000a6 !important;
+}
+
+.ui.vertical.menu .active.item.auxActive{
+    background: white !important;
+    border-left-style: solid !important;
+    border-left-color: #34483F !important;
+    border-left-width: thick !important;
+    width: 99% !important;
+    /*height: 30px !important;*/
+    border-bottom-right-radius: 14px !important;
+    border-top-right-radius: 14px !important;
+    color: #000000a6 !important;
+}
+
+.ui.accordion .item.aLoadContainer.activeA{
+    color: gold !important;
+}
+
+.ui.accordion .item{
+    color: white !important;
+    text-align: justify;
+}
+
+
+.content .itemNotInSubMenu span{
+    margin-left: 58px;
+}
+#subSubMenu .content .itemInSubMenu{
+    margin-left: 50px;
+}
+#subSubMenu .title span{
+    margin-left: 60px;
+}
+
+#iconesNavbar{
+    margin-right: 6%;
+}
+#iconesNavbar a.item{
+    color:white !important;
+    padding: 0 !important; 
+}
+
+#textDrop {
+    margin-left: 18px;
+    font-size: 18px !important;
+}
+
+#dropdownIconSidebar{
+    float: right;
+    margin-top: 5px !important;
+}
+
+/*.content{
+    margin-left: 48px;
+}*/
+
+#subSubMenu .content{
+    margin-left: 30px;
+}
+
+.content .item{
+    color: white !important;
+}
+
+#dropdownIconSidebarSub{
+    float: right;
+    margin-top: 2px !important; 
+}
+
+.ui.link.menu .item:hover, .ui.menu .dropdown.item:hover, .ui.menu .link.item:hover, .ui.menu a.item:hover{
+    background: transparent !important;
+}
+
+.ui.card, .ui.cards>.card#cardUser {
+    -webkit-box-shadow: none !important;
+}
+
+.ulGeral{
+    margin: 0 auto;
+    width: 320px;
+}
+
+.ui.comments{
+    margin: 6% !important;
+}
+.liGeral{
+    display: inline-block;
+    vertical-align: top;
+    color: black;
+    z-index: 999;
+    height: 98px;
+    width: 86px;
+}
+.liGeral#system{
+    padding: 1px;
+}
+
+.aGeral {
+    color: rgba(0,0,0,0.87) !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.aGeral .imgSys {
+    display: inline-block;
+    vertical-align: top;
+    height: 64px;
+    width: 64px;
+}
+
+.ui.cards>.card{
+    width: 100% !important;
+}
+#commentsNotifications{
+    width: 350px;
+    margin: 0 auto !important;
+}
+
+#containerToInformations{
+    width: 73%;
+    margin-right: 6% !important;
+}
+
+#containerToInformations h1 {
+    color: #006D44 !important;
+}

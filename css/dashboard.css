@@ -1,0 +1,13 @@
+.textoQuantidadeAcesso{
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 0% !important;
+    color: white;
+}
+
+.quantidadeAcesso{
+    margin-top: 0% !important;
+    font-size: 1.3rem;
+    text-align: left;
+    color: white;
+}
